@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@media only screen and (min-width: 1200px) {
+    body {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: Helvetica, sans-serif;
+
+    }
+
+    .h1Section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 96vh;
+        margin-bottom: 4vh;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 5rem;
+        position: absolute;
+        left: 110px;
+        top: 200px;
+        color: white;
+        line-height: 4rem;
+        background-image: linear-gradient(90deg,
+                white 0, white 4.5em,
+                black 4.5em, black 5em);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        z-index: 100;
+
+    }
+
+    /* h1>span {
+        color: black;
+    } */
+
+
+    .blackDiv {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: black;
+        width: 33.33%;
+        height: 96vh;
+    }
+
+    .h1Image {
+        position: absolute;
+        top: 0;
+        left: 33.33%;
+        width: 33.33%;
+        height: 96vh;
+        object-fit: cover
+    }
+
+    .whiteDiv {
+        background-color: white;
+        width: 33.33%;
+        height: 96vh;
+
+    }
+
+    .h1ParagraphButton {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        position: absolute;
+        width: 20rem;
+        height: 40rem;
+        top: 20vh;
+        right: 14%;
+    }
+
+    .h1ParagraphButton>p {
+        font-size: 22px;
+        line-height: 150%;
+        color: darkgrey;
+    }
+
+    .buttonDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        margin-top: 40px;
+
+
+    }
+
+    .buttonDiv>button {
+        background-color: black;
+        color: white;
+        font-size: 18px;
+        border: none;
+        height: 60px;
+        width: 200px;
+    }
+
+
+    .buttonDiv:hover,
+    .buttonDiv>button:hover {
+        cursor: pointer;
+    }
+
+    .buttonDiv>img {
+        height: 60px;
+        width: 50px;
+        background-color: orange;
+        color: white;
+
+    }
+
+    .secondSection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 150px;
+        margin-top: 4vh;
+    }
+
+    .firstDivInSecondSection {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .firstDivInSecondSection>img {
+        width: 60%;
+    }
+
+    .firstDivInSecondSection_text {
+        padding: 46px;
+    }
+
+    .firstDivInSecondSection_text>h2 {
+        font-size: 2.5rem;
+        text-align: start;
+        margin-bottom: 22px;
+        line-height: 90%;
+
+    }
+
+    .firstDivInSecondSection_text>p {
+        font-size: 22px;
+        margin-top: 22px;
+
+
+    }
+
+    .secondDivinSecondSection {
+        height: 80vh;
+        width: 100%;
+        margin-top: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4vh;
+    }
+
+    .grid2Image {
+        height: 80vh;
+        width: 60%;
+    }
+
+    .rigthDiv {
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4vh;
+    }
+
+    .grid3Image {
+        height: 40vh;
+        width: 400px;
+    }
+
+    .rigthDiv_text {
+        height: 40vh;
+        width: 400px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px;
+        background-color: black;
+
+    }
+
+    .rigthDiv_text>h3 {
+        font-size: 2.5rem;
+        color: white;
+        line-height: 90%;
+
+    }
+
+    .rigthDiv_text>p {
+        font-size: 18px;
+        color: white;
+        margin-top: 20px;
+        line-height: 150%;
+    }
+
+    footer {
+        height: 30vh;
+        width: 100%;
+        background-color: black;
+        margin-top: 8vh;
+        padding: 0 150px;
+        color: white;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    footer>.footerLargeText {
+        font-size: 30px;
+        line-height: 90%;
+    }
+
+    .footerText {
+        width: 50%;
+        line-height: 150%;
+
+    }
+
+    .socialIcons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+    }
+
+
+}

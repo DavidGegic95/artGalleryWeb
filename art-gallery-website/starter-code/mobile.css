@@ -1,0 +1,221 @@
+@media(max-width: 699px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body,
+    html {
+        min-height: 100vh;
+        max-width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+
+    }
+
+    .h1Section {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4vh;
+    }
+
+    .h1Section>.blackDiv,
+    .whiteDiv {
+        display: none;
+    }
+
+
+
+    .h1Section>img {
+        order: 1;
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+        /* display: none; */
+
+    }
+
+    .h1Section>h1 {
+        order: 2;
+        font-size: 300%;
+        line-height: 90%;
+    }
+
+    .h1ParagraphButton {
+        order: 3;
+        padding: 0 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4vh;
+
+
+    }
+
+    .h1ParagraphButton>p {
+        line-height: 140%;
+    }
+
+    .h1ParagraphButton>button {
+        width: 50%;
+    }
+
+    .buttonDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60vw;
+        height: 6 vh;
+    }
+
+    .buttonDiv>button {
+        width: 50vw;
+        height: 6vh;
+        background-color: black;
+        color: white;
+        border: none;
+    }
+
+    .buttonDiv>img {
+        width: 10vw;
+        height: 6vh;
+        background-color: orange;
+    }
+
+    .secondSection {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .firstDivInSecondSection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 4vh;
+        gap: 4vh;
+
+    }
+
+    .firstDivInSecondSection>img {
+        order: 0;
+        width: 100%;
+    }
+
+    .firstDivInSecondSection_text {
+        order: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4vh;
+    }
+
+    .firstDivInSecondSection_text>p {
+        line-height: 140%;
+
+    }
+
+    .firstDivInSecondSection_text>h2 {
+        font-size: 300%;
+        line-height: 90%;
+    }
+
+    .secondDivinSecondSection {
+        min-height: 100vh;
+        /* width: 100%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4vh;
+        margin-top: 4vh;
+
+
+    }
+
+    .grid2Image,
+    .grid3Image {
+        width: 100%;
+    }
+
+    .grid2Image {
+        order: 1;
+    }
+
+    .grid3Image {
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    .rigthDiv {
+        order: 2;
+        /* width: (100% - 40px); */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4vh;
+    }
+
+
+    .rigthDiv_text {
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: 50vh;
+        padding-left: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4vh;
+
+
+    }
+
+    .rigthDiv_text>h3 {
+        font-size: 300%;
+        line-height: 90%;
+    }
+
+    .rigthDiv_text>p {
+        line-height: 140%;
+        overflow: scroll;
+        text-overflow: ellipsis;
+
+    }
+
+    footer {
+        height: 40vh;
+        width: 100%;
+        margin-top: 4vh;
+
+        padding-left: 40px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4vh;
+        background-color: black;
+
+        color: white;
+    }
+
+
+}
