@@ -6,16 +6,12 @@
     --white-color: #fff;
 }
 
-
 * {
     margin: 0;
     padding: 0;
-    text-decoration: 0;
     box-sizing: border-box;
-    transition: all ease 0.2s;
-    list-style-type: none;
+    text-decoration: none;
 }
-
 
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -34,32 +30,28 @@
     }
 }
 
+html,
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Big Shoulders Display', sans-serif;
+}
+
+
+/* Desktop optimizaiton */
 
 @media only screen and (min-width: 1200px) {
-    body {
-        min-height: 100vh;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        font-family: 'Big Shoulders Display', sans-serif;
-        /* font-family: Helvetica, sans-serif; */
-
-    }
-
     .h1Section {
-        /* display: flex;
-        align-items: center;
-        justify-content: center; */
         width: 100%;
         height: 96vh;
         margin-bottom: 4vh;
         position: relative;
         top: 0;
         left: 0;
-
-
     }
 
     h1 {
@@ -112,7 +104,6 @@
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: column;
-
         position: absolute;
         width: 20rem;
         height: 40rem;
@@ -126,7 +117,7 @@
         color: darkgrey;
     }
 
-    .buttonDiv {
+    .ahrefContainer {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -136,9 +127,9 @@
 
     }
 
-    .buttonDiv>button {
-        background-color: black;
-        color: white;
+    .ahrefContainer>button {
+        background-color: var(--black-color);
+        color: var(--white-color);
         font-size: 18px;
         border: none;
         height: 60px;
@@ -146,8 +137,8 @@
     }
 
 
-    .buttonDiv:hover,
-    .buttonDiv>button:hover {
+    .ahrefContainer:hover,
+    .ahrefContainer>button:hover {
         cursor: pointer;
     }
 
@@ -155,11 +146,10 @@
         height: 60px;
         width: 50px;
         background-color: var(--brown-color);
-        color: white;
+        color: var(--white-color);
         display: flex;
         align-items: center;
         justify-content: center;
-
     }
 
     .secondSection {
@@ -197,8 +187,6 @@
     .firstDivInSecondSection_text>p {
         font-size: 22px;
         margin-top: 22px;
-
-
     }
 
     .secondDivinSecondSection {
@@ -238,20 +226,18 @@
         justify-content: center;
         flex-direction: column;
         padding: 30px;
-        background-color: black;
-
+        background-color: var(--black-color);
     }
 
     .rigthDiv_text>h3 {
         font-size: 2.5rem;
-        color: white;
+        color: var(--white-color);
         line-height: 90%;
-
     }
 
     .rigthDiv_text>p {
         font-size: 18px;
-        color: white;
+        color: var(--white-color);
         margin-top: 20px;
         line-height: 150%;
     }
@@ -259,16 +245,13 @@
     footer {
         height: 30vh;
         width: 100%;
-        background-color: black;
+        background-color: var(--black-color);
         margin-top: 8vh;
         padding: 0 150px;
-        color: white;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
+        color: var(--white-color);
         display: flex;
         align-items: center;
         justify-content: space-between;
-
     }
 
     footer>.footerLargeText {
@@ -279,7 +262,6 @@
     .footerText {
         width: 50%;
         line-height: 150%;
-
     }
 
     .socialIcons {
@@ -289,5 +271,446 @@
         gap: 14px;
     }
 
+}
 
+
+/* Tablet version and small laptops */
+
+@media(min-width:700px) and (max-width:1200px) {
+
+    html {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+
+
+    .h1Section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 96vh;
+        margin-bottom: 4vh;
+    }
+
+    h1 {
+        font-size: 3rem;
+        position: absolute;
+        left: 50%;
+        top: 10vh;
+        color: var(--black-color);
+        line-height: 80%;
+    }
+
+
+
+
+    .blackDiv,
+    .whiteDiv {
+        display: none;
+
+    }
+
+    .h1Image {
+        width: 60%;
+        height: 96vh;
+        object-fit: cover;
+    }
+
+
+
+    .h1ParagraphButton {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: absolute;
+        width: 20rem;
+        margin-top: 10vh;
+        height: 50vh;
+        top: 30vh;
+        left: 50%;
+    }
+
+    .h1ParagraphButton>p {
+        font-size: 22px;
+        line-height: 150%;
+        color: darkgrey;
+    }
+
+    .ahrefContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        margin-top: 40px;
+
+
+    }
+
+    .ahrefContainer>button {
+        background-color: var(--black-color);
+        color: var(--white-color);
+        font-size: 18px;
+        border: none;
+        height: 60px;
+        width: 200px;
+    }
+
+
+    .ahrefContainer:hover,
+    .ahrefContainer>button:hover {
+        cursor: pointer;
+    }
+
+    .arrowDiv {
+        height: 60px;
+        width: 50px;
+        background-color: var(--brown-color);
+        color: var(--white-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+
+    }
+
+    .secondSection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 5%;
+        margin-top: 4vh;
+    }
+
+    .firstDivInSecondSection {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .firstDivInSecondSection>img {
+        width: 60%;
+    }
+
+
+
+    .firstDivInSecondSection_text>h2 {
+        font-size: 2.5rem;
+        text-align: start;
+        margin-bottom: 22px;
+        line-height: 90%;
+
+    }
+
+    .firstDivInSecondSection_text>p {
+        font-size: 22px;
+        margin-top: 22px;
+
+
+    }
+
+    .secondDivinSecondSection {
+        height: 80vh;
+        margin-top: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4vh;
+    }
+
+    .grid2Image {
+        height: 84vh;
+        width: 60%;
+    }
+
+    .rigthDiv {
+        height: 80vh;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4vh;
+    }
+
+    .grid3Image {
+        height: 40vh;
+        width: 90%;
+        object-fit: cover;
+    }
+
+    .rigthDiv_text {
+        height: 40vh;
+        width: 90%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px;
+        background-color: var(--black-color);
+
+    }
+
+    .rigthDiv_text>h3 {
+        font-size: 2.2rem;
+        color: var(--white-color);
+        line-height: 90%;
+
+    }
+
+    .rigthDiv_text>p {
+        font-size: 16px;
+        color: var(--white-color);
+        margin-top: 12px;
+    }
+
+    footer {
+        height: 30vh;
+        width: 100%;
+        background-color: black;
+        margin-top: 8vh;
+        padding: 0 50px;
+        color: var(--white-color);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 5vw;
+
+    }
+
+    footer>.footerLargeText {
+        font-size: 30px;
+        line-height: 90%;
+        padding-left: 5%;
+    }
+
+    .footerText {
+        line-height: 150%;
+    }
+
+    .socialIcons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        padding-right: 5%;
+
+    }
+}
+
+/* mobile version and small tablets */
+
+@media(max-width: 699px) {
+
+    .h1Section {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4vh;
+    }
+
+    .h1Section>.blackDiv,
+    .whiteDiv {
+        display: none;
+    }
+
+    .h1Section>img {
+        order: 1;
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    .h1Section>h1 {
+        order: 2;
+        font-size: 300%;
+        line-height: 90%;
+    }
+
+    .h1ParagraphButton {
+        order: 3;
+        padding: 0 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4vh;
+
+    }
+
+    .h1ParagraphButton>p {
+        line-height: 140%;
+    }
+
+    .h1ParagraphButton>button {
+        width: 50%;
+    }
+
+    .ahrefContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        margin-top: 40px;
+
+
+    }
+
+    .ahrefContainer>button {
+        background-color: black;
+        color: white;
+        font-size: 18px;
+        border: none;
+        height: 60px;
+        width: 200px;
+    }
+
+
+    .ahrefContainer:hover,
+    .ahrefContainer>button:hover {
+        cursor: pointer;
+    }
+
+    .arrowDiv {
+        height: 60px;
+        width: 50px;
+        background-color: var(--brown-color);
+        color: var(--white-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .secondSection {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .firstDivInSecondSection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 4vh;
+        gap: 4vh;
+
+    }
+
+    .firstDivInSecondSection>img {
+        order: 0;
+        width: 100%;
+    }
+
+    .firstDivInSecondSection_text {
+        order: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4vh;
+    }
+
+    .firstDivInSecondSection_text>p {
+        line-height: 140%;
+
+    }
+
+    .firstDivInSecondSection_text>h2 {
+        font-size: 300%;
+        line-height: 90%;
+    }
+
+    .secondDivinSecondSection {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4vh;
+        margin-top: 4vh;
+
+
+    }
+
+    .grid2Image,
+    .grid3Image {
+        width: 100%;
+    }
+
+    .grid2Image {
+        order: 1;
+    }
+
+    .grid3Image {
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    .rigthDiv {
+        order: 2;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4vh;
+    }
+
+
+    .rigthDiv_text {
+        background-color: var(--black-color);
+        color: var(--white-color);
+        width: 100%;
+        height: 50vh;
+        padding-left: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4vh;
+
+
+    }
+
+    .rigthDiv_text>h3 {
+        font-size: 300%;
+        line-height: 90%;
+    }
+
+    .rigthDiv_text>p {
+        line-height: 140%;
+
+    }
+
+    footer {
+        height: 40vh;
+        width: 100%;
+        margin-top: 4vh;
+        padding-left: 40px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4vh;
+        background-color: var(--black-color);
+        color: var(--white-color);
+    }
 }
